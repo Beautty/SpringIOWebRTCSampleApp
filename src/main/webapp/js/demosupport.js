@@ -5,7 +5,7 @@
   var wsUri,loginUri,userName, wscSession,callHandler,sessionId = null,logoutUri,
       isVideo=false,callConfig,demoName ="Demo", onIncomingCallCmd;
   wsUri = "ws://" + window.location.hostname  + ":7001/ws/webrtc/guest";
-  loginUri = "http://" + window.location.hostname + ":8080/wscsample/index.html";
+  loginUri = "http://" + window.location.hostname + ":8080/index.html";
   logoutUri = "http://" + window.location.hostname + ":7001/logout?redirect_uri=" + loginUri;
   //**************Initailize Session******************/
   function initSession(userName){

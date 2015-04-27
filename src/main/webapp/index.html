@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title> WSC Sample Application </title>
+    
+    <script type="text/javascript">
+        var wscDemoBaseUrl = "http://" + window.location.hostname + ":8080/demos/wscdemo.html?";
+
+        function loginToWscAsWeblogicUser() {
+          window.location.href = "http://ocwsc71se.optaresolutions.com:7001/login?wsc_app_uri=/ws/webrtc/guest&redirect_uri=" + wscDemoBaseUrl;
+        }
+		
+    </script>
+</head>
+
+<body style="background: url('images/bg.png') repeat-x top left;" >
+
+<div>
+    <div id="header">
+		<h1> <img src="images/branding.png" alt="Oracle WebRTC Session Controller"></img> <span  style="margin-left: 20px;">Sample Application</span> </h1>
+		<hr/>
+    </div>
+    
+    <div id="content">	
+	    <ul>
+
+          <li>
+        	     <a href="#" onclick="loginToWscAsWeblogicUser()">Login using WSC admin credentials</a>
+        	     <BR><BR>
+          </li>	        
+	    </ul>
+
+    </div>
+</div>
+    
+</body>
+</html>
